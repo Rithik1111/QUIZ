@@ -1,0 +1,109 @@
+/* General styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #007aff;
+}
+
+/* Main container for the app */
+.app-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-container {
+  padding: 20px 0;
+}
+
+#question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+/* Answer buttons */
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn:hover:not([disabled]) {
+  background-color: #e0e0e0;
+  border-color: #c0c0c0;
+}
+
+/* Styles for correct/incorrect answers */
+.btn.correct {
+  background-color: #d4edda; /* Light green */
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.btn.incorrect {
+  background-color: #f8d7da; /* Light red */
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Next button */
+#next-btn, #restart-btn {
+  background-color: #007aff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+#next-btn:hover, #restart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}
+
